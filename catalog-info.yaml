@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: where-for-dinner
+  annotations:
+    github.com/project-slug: coyte/where-for-dinner
+spec:
+  type: other
+  lifecycle: unknown
+  owner: coyte
