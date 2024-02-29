@@ -1,0 +1,38 @@
+id: 81c28264-39cf-4367-b928-9307f58c3fd9
+timestamp: 2024-02-29T16:51:37.734Z
+source: VSCODE
+username: nteekens
+options:
+  projectName: where-for-dinner
+  workloadNamespace: ns-develop
+  serviceNamespace: ns-develop-service-instances
+  workloadType: web
+  gatewayType: ossscg
+  gatewayName: gateway-where-for-dinner
+  msgBrokerType: rabbitmq
+  dynamicMsgBroker: false
+  dynamicMsgBrokerClass: msgbroker-crossplane-where-for-dinner
+  msgbrokerName: msgbroker-where-for-dinner
+  numRabbitMQClusterNodes: 1
+  dbType: h2
+  dynamicDatabase: false
+  dynamicDBClass: db-crossplane-where-for-dinner
+  dbName: db-where-for-dinner
+  cacheType: inmemCache
+  dynamicCache: false
+  dynamicCacheClass: cache-crossplane-where-for-dinner
+  cacheName: cache-where-for-dinner
+  enableSecurity: false
+  appSSOName: appsso-where-for-dinner
+  enableDefaultDevAccount: true
+  devDefaultAccountUsername: where-for-dinner
+  devDefaultAccountPassword: letseat
+  appWorkloadURL: http://where-for-dinner.<UPDATE ME>
+  ployglotWorkloads: false
+  nativeBuild: false
+  includeBuildToolWrapper: true
+accelerator:
+  name: where-for-dinner
+fragments:
+  - name: build-wrapper-maven
+  - name: tap-workload
